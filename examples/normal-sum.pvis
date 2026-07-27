@@ -1,0 +1,31 @@
+{
+    "format": "stochia-project",
+    "sampleCount": 20000,
+    "selected": "Z",
+    "variables": [
+        {
+            "distribution": "normal",
+            "kind": "distribution",
+            "name": "X",
+            "parameters": {
+                "mu": 0,
+                "sigma": 1
+            }
+        },
+        {
+            "distribution": "exponential",
+            "kind": "distribution",
+            "name": "Y",
+            "parameters": {
+                "lambda": 2
+            }
+        },
+        {
+            "expression": "X + Y",
+            "kind": "transformation",
+            "name": "Z"
+        }
+    ],
+    "version": 1,
+    "view": "simulation"
+}

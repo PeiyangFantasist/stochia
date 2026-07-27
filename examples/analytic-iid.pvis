@@ -1,0 +1,27 @@
+{
+    "format": "stochia-project",
+    "sampleCount": 50000,
+    "selected": "S",
+    "variables": [
+        {
+            "distribution": "exponential",
+            "kind": "distribution",
+            "name": "X",
+            "parameters": {
+                "lambda": 2
+            }
+        },
+        {
+            "expression": "iid_sum(X,5)",
+            "kind": "transformation",
+            "name": "S"
+        },
+        {
+            "expression": "iid_max(X,10)",
+            "kind": "transformation",
+            "name": "M"
+        }
+    ],
+    "version": 1,
+    "view": "density"
+}

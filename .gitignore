@@ -1,0 +1,8 @@
+/build/
+/cmake-build-*/
+/work/
+/outputs/
+/.qt/
+*.user
+*.autosave
+/aqtinstall.log

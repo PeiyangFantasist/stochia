@@ -1,0 +1,28 @@
+{
+    "format": "stochia-project",
+    "sampleCount": 50000,
+    "selected": "S",
+    "variables": [
+        {
+            "distribution": "uniform",
+            "kind": "distribution",
+            "name": "U",
+            "parameters": {
+                "a": 0,
+                "b": 1
+            }
+        },
+        {
+            "expression": "iid_sum(U,10)",
+            "kind": "transformation",
+            "name": "S"
+        },
+        {
+            "expression": "(U-E(U))/sqrt(Var(U))",
+            "kind": "transformation",
+            "name": "Z"
+        }
+    ],
+    "version": 1,
+    "view": "density"
+}
